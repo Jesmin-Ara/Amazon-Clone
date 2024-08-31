@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Amazon copy Project</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div id="navbar">
+                <!-- Main Header -->
+                <!-- Logo and box 1 -->
+
+                <div id="logo" class="border">
+                    <img src="amazon_logo.png" alt="amazon logo">
+                </div>
+
+                <!-- Box 2 -->
+
+                <div id="nav-address" class="border">
+                    <p id="deliver-to">Deliver to</p>
+
+                    <div id="add-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p id="BD">Bangladesh</p>
+                    </div>
+
+                </div>
+
+                <!-- Box 3  -->
+
+                <div id="nav-search-bar">
+                    <select id="amazon-select">
+                        <option>All</option>
+                        <option>Electric</option>
+                        <option>Mens fashion</option>
+                        <option>Women's fashion</option>
+                        <option>Under 5000/=</option>
+                    </select>
+
+
+                    <input type="text" placeholder="Search Amazon.bd" id="search-bar">
+
+
+                    <button id="search-icon">
+                        <i class="fa-solid fa-magnifying-glass" id="search-icon-main"></i>
+                    </button>
+                </div>
+
+                <!-- Box 4 -->
+
+                <div id="box-4" class="border">
+                    <img id="bd-flag" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAflBMVEUAZkTYBSkAaUUAakXcACjfACfaACngACfSACkaX0KXMjQAZUTVACm4HS7AFyxwRTmuJDBFVT9lSjuAQDiTNTSkLTImXUFjTDuPNzXQBSqfMDPIECsAYUOyIi+JOTYdXkJPUT28Gi0zWUCFPDd7QjhDVT+pKDFaTjx9QTg8Vz+FaisoAAAEXUlEQVR4nO3dUXuaMBQGYDxJYKAoFpUisLVbZ7f//wcXZF23Jq61lZwEv/fKp7uRbyeHgJBEEQAAAAAAAAAAAAAAAAB8DPXE4PiZ+wux0lFE6fqm3GyLfNnLi+2mvFmnkbjKZPRB76rbrpZKSS0e9B/1H+ruttpF15ULUVvtG6nTmNnpZGSzr9priYVEu+piJeMTeTyJpYq7VSumHwtFj4UeHa/k8adelCoeo2mnQm1ZJ28N5HcsSV22001FpNns1SFjG0SzLBXcX34UlGYne+qrxSKzdHq1QvPP8XsTOaYSf55PLBWqavWBRHqqrqYUCn3pkvP7yEtx0n2ZTCq0encj+ZeUq2mEQm2RXCSRXlJM4bws1vVlimQg63Xwp2V6UB/vJH+L1UPgodD+cuPmSbIPevjM84+egW1UPuc+sHejdnnJVvJMLkPttJQ240SiQ2nCnOpTetETzotQ6iBDaUerkmMoTct9gOebj9RL/oSyDK/R5uNGokPJuQ/xTGI7diQ6lG1QkzdRXn6qZkrKgEKhOxeR6MnbXTgnn3Rx2WucU+JFyn2ob0Wj99cnMg+kUMhJMxkkZRih7Ma47jtF7bgP9y3o3tXI6cn7AAqFVu5GTi8J4BZtu3AayWy28P7CR2QuR05PZr7P3Jw22IHvbVYcXJeJLpSD34Xy1X2Z6EL5yn3Y/8NRJr4XCkM36fncUWjDUSa6UDb+zlGcz02e+DtHoRXP0NGDx9vJLN27uW1iir296tm5vdL5W+Jpl6VvPB22J7/5WSi05Bo6evAs/cyEaXIy8HOKQg98Q0cPngcfC4UK1kwKHzOZc03YBgsffz7+ztlOdEP5zh2AiX5wDh09eH74N3jIwa/m/81k62EmDd/spBc3/mXS8paJLhT/ro1/8rZY3WR/ckfwElXsmXj3KguV7GPHu5/TyflvXUYmmXeZsNyx/yeTg3eZOHsO52Qm3j2fw3nzZODfLRTuKZuPkzb6xBzJbPYJmSATZIJMJpsJzjsGzE9MmMeacL1jwnWxCfdPTLjPZoH7sSbctzdxT9r8m7Lhd0Ab/F5sgecKTHj+xITnlEx4ns0Czz2a8HysCc9RW+B5exPeyzDh/R0LvOdlwvuAFnhv1IT3iy3wHroJ6xVYYF0LE9Y/scA6OSasp2SBdbcssD6bCev4WThc77ELJBKsC2pDd25aSkjrx2KdYRusR22DdctNWN/eAvsgmLBfhgX2VbHA/js2I+3T1AXYXp9hPy8LgX3fTNgf0AL7SNpgv1EL7Etrg/2LLbDPtQ32Q7cRaab/v88ORNdXlk7gBHwCtWWdnFcsMqnLiZx/T6Ho8aDUW2ORSh0eo2kn0iPRrrpYvTqIYqnibtWK6SdyRNRW+0aqkz1X6n9r9lVLVxLIQB/trrrtaj06pBYP+o/6D3V3W+2i6wrkNyIRpeubcrMt8mUvL7ab8madRuIq83hGPTE4fub+QgAAAAAAAAAAAAAAAADB+wUr1V2vy9QXBwAAAABJRU5ErkJggg==" alt="Bangladesh's flag">
+                    <p id="flag-txt">BD</p>
+                </div>
+
+                <!-- Box 5 -->
+
+                <div id="sign-in-box" class="border">
+                    <p class="header-small-text">Hello, sign in</p>
+                    <p class="header-big-text">Accounts & Lists</p>
+                </div>
+
+                <!-- Box 6 -->
+
+                <div id="header-box-6" class="border">
+                    <p class="header-small-text">Returns</p>
+                    <p class="header-big-text">& Orders</p>
+                </div>
+
+                <!-- Box 7 -->
+
+                <div id="cart-box" class="border">
+                    <i id="cart-icon" class="fa-solid fa-cart-shopping"></i>
+                    <div id="cart-texts-parent">
+                        <p id="cart">Cart</p>
+                    </div>
+                </div>
+                <!-- Main header Ends -->
+
+                <!-- Control pannel -->
+
+
+            </div>
+
+            <div id="panel">
+
+                <!-- Box 1 -->
+
+                <div id="panel-box-1" class="border">
+                    <i id="bar-icon" class="fa-solid fa-bars"></i>
+                    <p id="panel-box-1-txt">All</p>
+                </div>
+
+                <!-- Box 2 -->
+                
+                <div id="panel-box-2">
+                    <p class="panel-box-2-txt border">Today's Deals   </p>
+                    <p class="panel-box-2-txt border">Customer Service</p>
+                    <p class="panel-box-2-txt border">Registry        </p>
+                    <p class="panel-box-2-txt border">Gift Cards      </p>
+                    <p class="panel-box-2-txt border">Sell            </p>
+                    
+                </div>
+
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero section -->
+             <div id="hero-section">
+
+                <div id="hero-msg">
+                    <p>You are on amazon.com. You can shop on Amazon Bangladesh for millions of product with fast local delivary. <a href="#">Click here to go to amazon.bd</a></p>
+                </div>
+             </div>
+
+             <!-- Shoping section -->
+              
+            <div id="shoping-section">
+                        
+                <div class="box1 box">
+                    <h2>Cloths</h2>
+
+                    <div class="shop-img" style="background-image: url('box1_image.jpg');"></div>
+                    <p>See more</p>
+                </div>     
+
+
+
+
+
+                <div class="box2 box">
+                    <h2>Helth & Self Care</h2>
+
+                    <div class="shop-img" style="background-image: url('box2_image.jpg');"></div>
+                    <p>See more</p>
+                </div>
+
+
+
+
+
+                <div class="box3 box">
+                    <h2>Furnitures</h2>
+
+                    <div class="shop-img" style="background-image: url('box3_image.jpg');"></div>
+                    <p>See more</p>
+                </div>
+
+
+
+
+                <div class="box4 box">
+                    <h2>Electronics</h2>
+
+                    <div class="shop-img" style="background-image: url('box4_image.jpg');"></div>
+                    <p>See more</p>
+                </div>
+
+                
+
+                <div class="box5 box" >
+                    <h2>Makeup & beauty</h2>
+
+                    <div class="shop-img" style="background-image: url('box5_image.jpg');"></div>
+                    <p>See more</p>
+                </div>
+
+
+
+                <div class="box6 box" >
+                    <h2>Pet toys & foods</h2>
+
+                    <div class="shop-img" style="background-image: url('box6_image.jpg');"></div>
+                    <p>See more</p>
+                </div>
+
+
+                <div class="box7 box" >
+                    <h2>Kid's Toys</h2>
+
+                    <div class="shop-img" style="background-image: url('box7_image.jpg');"></div>
+                    <p>See more</p>
+                </div>
+
+
+
+                <div class="box8 box" >
+                    <h2>Fashion trends</h2>
+
+                    <div class="shop-img" style="background-image: url('box8_image.jpg');"></div>
+                    <p>See more</p>
+                </div>
+            </div>
+        </main>
+
+        <hr>
+
+        <footer>
+
+            <!--Foot panel 1 back to top  -->
+            <a id="foot-panel-1" href="#logo">
+                Back to top
+            </a>
+
+        </footer>
+    </body>
+</html>
